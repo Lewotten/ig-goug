@@ -6,6 +6,7 @@ foodBowl
 There is a shiny food bowl here perpetually filled with your favorite lunch, tuna.
 5
 eat out of[Hunger(-20)]:You lick your lips in satisfaction. Meowlicious!
+eat from[Hunger(-20)]:You lick your lips in satisfaction. Meowlicious!
 take:Your human would get mad at you if you take that.
 ---
 scratchingPost
@@ -17,6 +18,7 @@ take:You can't take the scratching post. It's part of your cat tree!
 mouseToy
 You spot a furry green mouse toy here.
 1
+attack:You follow your instincts and pounce upon the innocent mouse toy. You feel fulfilled.
 play with:The mouse toy squeaks beneath your paws. You pounce at it with delight.
 ---
 featherToy
