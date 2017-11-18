@@ -1,0 +1,52 @@
+Group Bork v1.0
+save data
+Dungeon file: dungeons/trinkleG3a.zork
+Item states:
+lamp:
+isOn=true
+---
+===
+Room states:
+Stephen's office:
+beenHere=false
+Contents: StarWarsToy,WawaTravelMug,donut
+---
+Room B6:
+beenHere=false
+---
+Basement hallway:
+beenHere=false
+Contents: DrPepper
+Locked exits: w
+---
+Room B13:
+beenHere=false
+Contents: Bomb
+---
+Rotunda balcony:
+beenHere=false
+Contents: chainsaw,magicWand
+---
+Rotunda:
+beenHere=true
+Contents: force
+---
+===
+Character states:
+ItemStealer:
+red gremlin
+HasItem: false
+---
+QuestGiver:
+green cat
+GotItem: false
+---
+===
+Adventurer state:
+Current room: Rotunda
+Inventory: lamp
+Damage: 0
+Hunger: 2
+Fatigue: 2
+Score: 0
+Rank: an amatuer

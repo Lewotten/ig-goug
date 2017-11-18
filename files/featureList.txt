@@ -1,0 +1,98 @@
+Verbose - Rooms that have not been entered by the player will display a room description upon entry. Once the player
+re-enters a room, the room description will no longer be displayed. If the player forgets or wants to see the room description
+again, the player can type "verbose on" and the room description will always be displayed for every room. If the player no longer wants
+to see the room description, they can type "verbose off" and the room description will be removed. For example, the first time a player
+walks into the the Cat Tree Balcony the following description will appear: "You jump onto a luxuriously soft platform, over which you can
+see the entire room. The sun shines through the window above you, casting warm rays of light over your favorite cozy spot." When the player
+leaves and re-enters the Cat Tree Balcony the description will no longer appear, unless the player uses the verbose on command. In that case,
+the description of the Cat Tree Balcony room will appear again. If the player no longer wants to see the description of the Cat Tree Balcony,
+they can use the verbose off command and the description will no longer appear when they re-enter the room.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Light - Some rooms in the game will be completely pitch black but there will be a light source somewhere that the player 
+can obtain. The light feature will allow the player to turn a light source, if available, on and off in a dark room. 
+For example, the Rec Room is a dark room, and the only light source in the dungeon is the computerMouse. From the Cat 
+Tree Balcony, the player will need to go d,d,e,u, and w to get to the Human’s Room. Once the player has entered the Human’s 
+Room they can obtain the computerMouse light source by typing “take computerMouse”. Then the player can make their way to the
+Rec Room by going e,d,d from the Human’s Room. The player can then turn on the light on the computerMouse by typing “turn on computerMouse”.
+The player can also turn the computerMouse off when they leave Rec Room by typing "turn off the computerMouse" or the player can decide
+to leave the computerMouse on when they leave the Rec Room. If the player returns to the Rec Room, then they will still be
+able to see the contents of the room.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Locked Doors - Some rooms contain exits which barr entry to the player, unless they obtain the necessary item, known as
+a key, to open it. Each exit has its own unique key, which is located somewhere in the dungeon. To encounter a locked door,
+go to the upstairs hallway (located d,d,e,u from the entry), whose n exit, called white door, is listed in the room description as closed.
+If you attempt to go through the exit, you will be informed that the door is locked. Go back to the foyer by going down.
+Type "move the rug." The game will inform you that the cat face key is underneath. Take the cat face key and return to the upstairs hallway.
+Attempt to open the door with the cat face key by typing "unlock the white door with the cat face key" or "open white door with cat
+face key." The game will inform you that you can't use the key to open the door. If you attempt to go n again, you will discover that the
+door is still locked. The exit's true key is found in the human's room, w of your current room. Take it and return to the room with the
+locked door and type "unlock white door with golden key" or "open white door with golden key". The game will inform you that you have
+unlocked the exit, allowing you to advance n into the craft room.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Hunger - In addition to healing wounds, the player must also maintain their hunger throughout their adventure. Each
+time the player enters a valid command (take, drop, move, unlock or item/character specific), their hunger increases by one point. Hunger is
+assessed through three thresholds: minor (between 1 and 20 valid turns), moderate (between 21 and 40 valid turns) and
+critical (between 41 and 60 valid turns). Once a player passes each threshold, they are warned once. To test the hunger
+feature, waste time in the dungeon performing valid commands. After the 51st turn, the program will state "Your stomach growls ferociously."
+To alleviate your hunger, go to the cat tree porch (located d,d from the entry), which contains a food bowl. Eat the food within it by typing
+"eat out of the food bowl". The game will say "You lick your lips in satisfaction. Meouwlicious! After your snack, you are full." Note
+that if you eat a light snack, then your hunger may not appreciably change. For example, waste time performing valid commands until the game
+informs you that your stomach grows ferociously. Then, head to the backyard, located n,n,n from the foyer. It contains a leaf, which only
+detracts 1 point from your hunger. If you eat it, then hunger does not lower below the minor threshold, and the game still informs you that your stomach
+is not fully satisfied. Continue to move through the dungeon, allowing your hunger to increase to the critical level. Do not eat any food.
+Do not visit east of house, located s,e from the foyer, since you will be killed by the AutoKiller NPC contained there. After 61 turns,
+you will collapse from exhaustion and die from starvation.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Fatigue - Just as the player's hunger grows after every turn, so too does their fatigue. Each time the player enters a
+valid command (take, drop, move, unlock or item/character specific), their hunger increases based on the weight of the
+adventurer's inventory. If the player is empty handed, then fatigue increases by one point. However, if the adventurer
+is carrying items, then an extra twentieth of the player's inventory weight is added, plus the default one point. Like hunger, fatigue is
+assessed through three thresholds: minor (between 1 and 20 valid turns), moderate (between 21 and 40 valid turns) and
+critical (between 41 and 60 valid turns). Once a player passes each threshold, they are warned once. To test the fatigue
+feature, waste time in the dungeon performing valid commands. Make sure to place items into your inventory to increase
+the rate of your fatigue. You can take the golden key and the computer mouse located in the human's room, u,w from the foyer. After reaching the
+moderate threshold, the program will state "Your eyes droop from fatigue." Type "health" to see the state of your hunger.
+To alleviate your exhaustion, type "sleep." The game will inform you of the state of your health after your nap. Since the
+sleep command transfers the current level of fatigue to hunger, you will find that your hunger has increased. Restart the game and move through
+the dungeon, allowing your fatigue to increase to the critical level. Do not sleep or eat. After 61 turns, the game will inform
+you that you have collapsed from fatigue and fallen asleep on the spot. Since you have neglected your hunger, your nap will have
+caused you to die from starvation.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+AutoKiller NPCs - AutoKiller is a type of NPC that will appear in the dungeon. This NPC kills the player on sight if the room is a dead end.
+If the player talks to this NPC in a non dead end room then it will kill the player.This NPC can be talked to by saying "talk to" and the NPC’s name.
+ This NPC can be given gifts by saying "give to the AutoKiller", an item in the player’s inventory name, and the NPC’s name
+AutoKiller can be found in the east of the house by going d, d, w, e.
+Look under the rug, take the cat face key, unlock the front door with the cat face key, s, e. 
+There you will encounter the black dog who will kill you.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+ItemStealer NPCs -  ItemStealer is a type of NPC that appears in the dungeon. 
+This NPC looks through the player's inventory to see if the player has the item the NPC is looking for. 
+If the player does this NPC will steal it from the player.  This NPC can be talked to by saying "talk to" and the NPC’s name. 
+This NPC can be given gifts by saying "give", an item in the player’s inventory name, and the NPC’s name. 
+There are Several ItemStealers in this game file who all steal the craziest stuff. To encounter one go d,d,w,e,n.
+ There the player will find a shady looking raccoon. 
+Take the leaf there, go in any direction and then return to the room and he will steal the leaf.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+QuestGiver NPCs - QuestGiver is a type of NPC that appears in the dungeon. This NPC tells the player what item it is looking
+for and responds with a gift if the player gives that desired item to them.This NPC can be talked to by saying "talk to" and the NPC’s name. 
+This NPC can be given gifts by saying "give", an item in the player’s inventory name, and the NPC’s name. 
+The questGiver can be found in the Foyer. His name is old dog. To meet him from the start of the game go d,d,w,e. 
+When you talk to him he will tell you he is looking for his bone and will make it worth your time. 
+To get his bone go n,n, dig up the patch of mud, take the bone, e,s,s give the old dog the bone.
+ As a reward he will give you a key to the China Cabinet.
+
+-------------------------------------------------------------------------------------------------------------------------
