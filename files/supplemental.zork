@@ -6,7 +6,6 @@ foodBowl
 There is a shiny food bowl here perpetually filled with your favorite lunch, tuna.
 5
 eat out of[Hunger(-20)]:You lick your lips in satisfaction. Meowlicious!
-eat from[Hunger(-20)]:You lick your lips in satisfaction. Meowlicious!
 take:Your human would get mad at you if you take that.
 ---
 scratchingPost
@@ -18,8 +17,8 @@ take:You can't take the scratching post. It's part of your cat tree!
 mouseToy
 You spot a furry green mouse toy here.
 1
-attack:You follow your instincts and pounce upon the innocent mouse toy. You feel fulfilled.
 play with:The mouse toy squeaks beneath your paws. You pounce at it with delight.
+kill: You attempt to rip the mouse toy mercalissly. Murder is the best. 
 ---
 featherToy
 A feather toy dangles from the ceiling of the cat tree balcony above.
@@ -35,7 +34,7 @@ scratch:Your human would call you a bad cat, but she isn't home right now, so yo
 jump onto:Wheee! You can see the black box from here.
 ---
 magicBox
-The magic box hangs on the center wall.
+The magic box hangs on the center wall. It seems to contain worlds that the humans just watch. 
 200
 take:You can't take it. The magic black box is fixed to the wall.
 ---
@@ -214,10 +213,12 @@ deadBird
 A dead bird lies here.
 2
 eat[Hunger(-20)]:You lick your lips in satisfaction. Now that’s what you call food!
+play with: It's rude to play with your food. 
 ---
 patchOfMud
 There is a patch of mud here. Must be that dog.
 0
+play in [Transform(bone), Score(20)]: You're all a mess now but you find the dogs bone!
 dig up[Transform(bone),Score(20)]:You move the dirt away with your claws and find a buried bone.
 take:I don’t think you can take a patch of mud.
 ---
